@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:weightSum="100"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout android:layout_weight="20" android:weightSum="100"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="20dp">
+		<RadioGroup android:id="@+id/angle" android:layout_width="50dp"
+			android:orientation="horizontal" android:layout_height="fill_parent"
+			android:layout_weight="50" android:weightSum="100">
+			<RadioButton android:text="Degrees"
+				android:layout_weight="50" android:layout_height="fill_parent"
+				android:layout_width="25dp" android:id="@+id/deg" android:checked="true"></RadioButton>
+			<RadioButton android:layout_width="25dp"
+				android:layout_weight="50" android:text="Radians"
+				android:layout_height="fill_parent" android:id="@+id/rad"></RadioButton>
+		</RadioGroup>
+		
+		<TextView android:id="@+id/display_land" android:layout_weight="50"
+			android:layout_width="50dp" android:gravity="right" android:text="0"
+			android:textColor="@android:color/black" android:background="@android:color/background_light" android:textSize="45dp"
+			android:maxHeight="20dp" android:layout_height="fill_parent"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_weight="16"
+		android:orientation="horizontal" android:weightSum="100"
+		android:layout_width="fill_parent" android:layout_height="16dp">
+		<Button android:layout_height="fill_parent" android:layout_weight="12.5"
+				android:layout_width="12.5dp"  android:id="@+id/bop"
+				android:text="(" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent" android:layout_weight="12.5"
+				android:layout_width="12.5dp"  android:id="@+id/bcl"
+				android:text=")" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent" android:layout_weight="12.5"
+				android:layout_width="12.5dp" android:id="@+id/mod"
+				android:text="Mod" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent" android:layout_weight="12.5"
+				android:layout_width="12.5dp"  android:id="@+id/clear_land"
+				android:text="C" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+		<LinearLayout android:weightSum="100"
+			android:layout_height="fill_parent" android:orientation="horizontal"
+			android:layout_weight="50" android:layout_width="50dp">
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="25" android:id="@+id/plus_land"
+				android:text="+" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="25" android:id="@+id/minus_land"
+				android:text="-" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="25" android:id="@+id/mul_land"
+				android:text="*" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="25" android:id="@+id/div_land"
+				android:text="/" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:layout_weight="16"
+		android:orientation="horizontal" android:weightSum="100"
+		android:layout_width="fill_parent" android:layout_height="16dp">
+		<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/fact"
+				android:text="n!" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/sin"
+				android:text="sin" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/cos"
+				android:text="cos" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/tan"
+				android:text="tan" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/seven_land"
+				android:text="7" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/eight_land"
+				android:text="8" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/nine_land"
+				android:text="9" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/eq_land"
+				android:text="=" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+	</LinearLayout>
+
+	<LinearLayout android:layout_weight="16"
+		android:orientation="horizontal" android:weightSum="100"
+		android:layout_width="fill_parent" android:layout_height="16dp">
+		<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/powerten"
+				android:text="@string/powerten" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/sinh"
+				android:text="sinh" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/cosh"
+				android:text="cosh" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/tanh"
+				android:text="tanh" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/four_land"
+				android:text="4" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/five_land"
+				android:text="5" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/six_land"
+				android:text="6" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/allclear_land"
+				android:text="AC" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+	</LinearLayout>
+
+	<LinearLayout android:layout_weight="16"
+		android:orientation="horizontal" android:weightSum="100"
+		android:layout_width="fill_parent" android:layout_height="16dp">
+		<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/inv"
+				android:text="Inv" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/exp"
+				android:text="e" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/pi"
+				android:text="@string/button_pi" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/ln"
+				android:text="ln" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/one_land"
+				android:text="1" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/two_land"
+				android:text="2" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/three_land"
+				android:text="3" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent" android:text="@string/croot"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/croot"
+				 android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			
+	</LinearLayout>
+
+
+	<LinearLayout android:layout_weight="16"
+		android:orientation="horizontal" android:weightSum="100"
+		android:layout_width="fill_parent" android:layout_height="16dp">
+		<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/sq"
+				android:text="@string/sq" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/cube"
+				android:text="@string/cube" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent" android:text="@string/power"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/power"
+				android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white"> 
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/log"
+				android:text="log" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/root"
+				android:text="@string/root" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/zero"
+				android:text="0" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/dot"
+				android:text="." android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			<Button android:layout_height="fill_parent"
+				android:layout_width="12.5dp" android:layout_weight="12.5" android:id="@+id/yroot"
+				android:text="@string/yroot" android:textSize="25dp" android:background="@android:color/transparent"
+				android:textColor="@android:color/white">
+			</Button>
+			
+	</LinearLayout>
+
+
+</LinearLayout>

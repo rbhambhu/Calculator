@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:weightSum="100" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<LinearLayout android:weightSum="100" android:orientation="horizontal"
+		android:layout_weight="15" android:layout_height="15dp"
+		android:layout_width="fill_parent">
+		<TextView android:layout_weight="20" android:text="a1"
+			android:textSize="40dp" android:gravity="center"
+			android:layout_gravity="center" android:layout_height="fill_parent"
+			android:layout_width="20dp" />
+		<EditText android:layout_weight="30" android:id="@+id/aone" android:inputType="number"
+			android:layout_height="fill_parent" android:layout_width="30dp" />
+		<TextView android:layout_weight="20" android:text="b1"
+			android:textSize="40dp" android:gravity="center"
+			android:layout_gravity="center" android:layout_height="fill_parent"
+			android:layout_width="20dp" />
+		<EditText android:layout_weight="30" android:id="@+id/bone" android:inputType="number"
+			android:layout_height="fill_parent" android:layout_width="30dp" />
+	</LinearLayout>
+	<LinearLayout android:weightSum="100" android:orientation="horizontal"
+		android:layout_weight="15" android:layout_height="15dp"
+		android:layout_width="fill_parent">
+		<TextView android:layout_weight="20" android:text="a2"
+			android:textSize="40dp" android:gravity="center"
+			android:layout_gravity="center" android:layout_height="fill_parent"
+			android:layout_width="20dp" />
+		<EditText android:layout_weight="30" android:id="@+id/atwo" android:inputType="number"
+			android:layout_height="fill_parent" android:layout_width="30dp" android:editable="true" />
+		<TextView android:layout_weight="20" android:text="b2"
+			android:textSize="40dp" android:gravity="center"
+			android:layout_gravity="center" android:layout_height="fill_parent"
+			android:layout_width="20dp" />
+		<EditText android:layout_weight="30" android:id="@+id/btwo" android:inputType="number"
+			android:layout_height="fill_parent" android:layout_width="30dp" />
+	</LinearLayout>
+	<TextView android:layout_weight="20" android:text="Select Operation"
+		android:textSize="30dp" android:layout_gravity="center"
+		android:gravity="center" android:layout_width="fill_parent"
+		android:layout_height="20dp" android:textStyle="bold" />
+	<LinearLayout android:weightSum="100" android:orientation="horizontal"
+		android:layout_weight="15" android:layout_height="15dp"
+		android:layout_width="fill_parent">
+		<Button android:layout_weight="25" android:id="@+id/plusc" android:clickable="true"
+			android:textSize="50dp" android:text="+" android:background="@android:color/background_dark"
+			android:textColor="@android:color/white" android:layout_height="fill_parent"
+			android:layout_width="25dp" />
+		<Button android:layout_weight="25" android:id="@+id/minusc"
+			android:textSize="50dp" android:text="-" android:background="@android:color/background_dark"
+			android:textColor="@android:color/white" android:layout_height="fill_parent"
+			android:layout_width="25dp" />
+		<Button android:layout_weight="25" android:id="@+id/mulc"
+			android:textSize="50dp" android:text="*" android:background="@android:color/background_dark"
+			android:textColor="@android:color/white" android:layout_height="fill_parent"
+			android:layout_width="25dp" />
+		<Button android:layout_weight="25" android:id="@+id/divc"
+			android:textSize="50dp" android:text="/" android:background="@android:color/background_dark"
+			android:textColor="@android:color/white" android:layout_height="fill_parent"
+			android:layout_width="25dp" />
+	</LinearLayout>
+	<LinearLayout android:layout_weight="15"
+		android:layout_height="15dp" android:layout_width="fill_parent" android:weightSum="100">
+		<TextView android:text="Result" android:textSize="40dp"
+			android:layout_weight="100" android:layout_width="fill_parent"
+			android:layout_height="100dp" android:gravity="center"
+			android:background="@android:color/background_dark"
+			android:textColor="@android:color/white" />
+	</LinearLayout>
+	<LinearLayout android:layout_weight="15"
+		android:layout_height="15dp" android:layout_width="fill_parent" android:weightSum="100">
+		<TextView android:text="0" android:textSize="40dp" android:id="@+id/resc"
+			android:layout_weight="100" android:layout_width="fill_parent"
+			android:layout_height="100dp" android:gravity="right"
+			android:background="@android:color/background_dark"
+			android:textColor="@android:color/white" />
+	</LinearLayout>
+
+
+
+</LinearLayout>

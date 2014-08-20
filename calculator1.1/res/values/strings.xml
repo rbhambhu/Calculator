@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Royce_Cal</string>
+    <string name="button_pi"> &#928;</string>
+    <string name="cube"> x&#179;</string>
+    <string name="sq">x&#178;</string>
+    <string name="root">&#8730;</string>
+    <string name="power">x&#8319;</string>
+    <string name="croot">3&#8730;</string>
+    <string name="yroot">y&#8730;</string>
+    <string name="powerten">10&#8319;</string>
+        
+    
+</resources>
